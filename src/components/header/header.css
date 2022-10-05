@@ -1,0 +1,83 @@
+header {
+  background: black;
+  width: 100%;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .menu ul li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 8px 0px 8px 40px;
+  cursor: pointer;
+}
+.navbar .menu ul li:hover a {
+  color: #c00;
+}
+.navbar .menu ul li a {
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s e;
+  -moz-transition: all 0.4s e;
+  -ms-transition: all 0.4s e;
+  -o-transition: all 0.4s e;
+}
+.navbar .menu ul li span {
+  font-size: 25px;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s e;
+  -moz-transition: all 0.4s e;
+  -ms-transition: all 0.4s e;
+  -o-transition: all 0.4s e;
+}
+.navbar .menu ul li:hover span {
+  color: #c00;
+}
+.navbar .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .social ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .social ul a {
+  font-size: 25px;
+  color: #fff;
+  margin: 8px 5px;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s e;
+  -moz-transition: all 0.4s e;
+  -ms-transition: all 0.4s e;
+  -o-transition: all 0.4s e;
+}
+.navbar .social ul a:hover {
+  color: #c00;
+}
+.navbar .social button {
+  color: #fff;
+  background-color: #c00;
+  padding: 10px;
+  margin-right: 30px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s e;
+  -moz-transition: all 0.4s e;
+  -ms-transition: all 0.4s e;
+  -o-transition: all 0.4s e;
+}
+.navbar .social button:hover {
+  background-color: red;
+}

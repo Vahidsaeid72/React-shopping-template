@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/number/vazir.eot") format("eot");
+  src: url("../fonts/number/vazir.ttf") format("truetype"),
+    url("../fonts/number/vazir.woff") format("woff");
+}
+* {
+  padding: 0px;
+  margin: 0;
+  text-decoration: none !important;
+  list-style: none !important;
+  font-family: "vazir" !important;
+  box-sizing: border-box;
+}
+body {
+  direction: rtl;
+}
