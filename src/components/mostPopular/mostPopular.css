@@ -1,0 +1,73 @@
+#mostPopular {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 10px dashed rgb(116, 116, 116);
+  margin: 30px 80px;
+}
+#mostPopular .populars {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#mostPopular .populars .populars-item {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-left: 7px dashed rgb(116, 116, 116);
+}
+
+#mostPopular .populars .populars-item img {
+  width: 100%;
+  height: 350px;
+  padding: 10px;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+#mostPopular .populars .populars-item img:hover {
+  transform: scale(1.06);
+  -webkit-transform: scale(1.06);
+  -moz-transform: scale(1.06);
+  -ms-transform: scale(1.06);
+  -o-transform: scale(1.06);
+}
+#mostPopular .populars .populars-item .statistics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+#mostPopular .populars .populars-item .statistics .statistics-veiw,
+#mostPopular .populars .populars-item .statistics .statistics-like {
+  display: flex;
+  align-items: center;
+}
+#mostPopular .populars .populars-item .statistics .statistics-like p,
+#mostPopular .populars .populars-item .statistics .statistics-veiw p {
+  margin-left: 10px;
+}
+#mostPopular .populars .populars-item .statistics .statistics-veiw span {
+  color: blue;
+  font-size: 20px;
+}
+#mostPopular .populars .populars-item .statistics .statistics-like span {
+  color: rgb(255, 0, 0);
+  font-size: 20px;
+}
+#mostPopular .populars-title {
+  width: 30%;
+}
+#mostPopular .populars-title h1 {
+  color: red;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
