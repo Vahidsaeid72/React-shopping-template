@@ -1,4 +1,5 @@
 import Banner from "./components/banner/banner";
+import Footer from "./components/footer/footer";
 import Header from "./components/header/header";
 import MostPopular from "./components/mostPopular/mostPopular";
 import Products from "./components/products/products";
@@ -15,6 +16,7 @@ const App = () => {
       <Products />
       <Suggestions />
       <MostPopular />
+      <Footer />
     </div>
   );
 };
