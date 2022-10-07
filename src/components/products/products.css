@@ -1,0 +1,104 @@
+#main {
+  width: 100%;
+  display: flex;
+  padding: 0 10px;
+  margin-top: 30px;
+}
+#main #content {
+  width: 66.66%;
+  display: flex;
+  flex-direction: column;
+}
+#main #aside {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+}
+#content .clothes {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(223, 223, 223);
+  margin: 10px 20px;
+}
+#content .clothes .items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#content .items .dress-item {
+  width: 24%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+#content .items .dress-item:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+#content .items .dress-item img {
+  height: 300px;
+  width: 100%;
+  cursor: pointer;
+}
+#content .clothes h2 {
+  margin: 20px;
+  border-bottom: 2px solid rgb(121, 0, 0);
+}
+/* --------------------------------------- */
+
+#content .Cosmetics {
+  width: 100%;
+  padding: 20px;
+  margin-top: 30px;
+  position: relative;
+  border: 1px solid rgb(223, 223, 223);
+}
+#content .Cosmetics img {
+  width: 100%;
+}
+#content .Cosmetics h1 {
+  position: absolute;
+  left: 15%;
+  top: 34%;
+  font-size: 50px;
+}
+/* ---------------------------------------- */
+
+#content .brand {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(223, 223, 223);
+  margin: 5px 0;
+}
+#content .brand h2 {
+  margin: 20px;
+  border-bottom: 2px solid rgb(121, 0, 0);
+}
+#content .brand .items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#content .brand .brand-item {
+  width: 16%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+#content .brand .brand-item img {
+  height: 150px;
+  width: 100%;
+}
+/* --------------------------------------- */
