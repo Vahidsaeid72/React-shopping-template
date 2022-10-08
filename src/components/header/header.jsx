@@ -66,7 +66,7 @@ const Header = () => {
                                             <li>کفش</li>
                                         </ul>
                                     </li>
-                                    <li><img src="./images/6.jpg" alt="" /></li>
+                                    <li id="mega-menu-pic"><img src="./images/6.jpg" alt="" /></li>
                                 </ul>
                             </li>
                             <li><a href="/">سبد خرید</a><span><FaRegCreditCard /></span></li>

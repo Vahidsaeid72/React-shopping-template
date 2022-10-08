@@ -60,7 +60,7 @@ footer .footer-top .foter-latestNews form {
   width: 100%;
 }
 footer .footer-top .foter-latestNews form input {
-  width: 78%;
+  width: 70%;
   padding: 14px;
   font-size: 20px;
   border-radius: 10px;
@@ -75,7 +75,7 @@ footer .footer-top .foter-latestNews form button {
   padding: 15px;
   background: #c00;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   margin-right: 10px;
   border-radius: 10px;
   -webkit-border-radius: 10px;

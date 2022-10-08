@@ -254,10 +254,48 @@ header {
   .navbar .social ul a {
     font-size: 30px;
   }
+
+  .navbar .menu ul li .mega-menu {
+    position: absolute;
+    height: 0px;
+    opacity: 0;
+    top: -57px;
+    right: 162px;
+    width: 87%;
+    background-color: rgb(83, 54, 54);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start !important;
+    flex-wrap: nowrap !important;
+    flex-direction: row !important;
+  }
+  .navbar .menu.show-menu ul li {
+    border-bottom: none !important;
+  }
+  #mega-menu-pic {
+    display: none;
+  }
+  .navbar .menu ul li:hover .mega-menu {
+    height: 350px;
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 790px) {
   .navbar .social ul a {
     font-size: 25px;
+  }
+
+  .navbar .menu ul li .mega-menu {
+    width: 85%;
+  }
+  .navbar .menu ul li .mega-menu li h2 {
+    font-size: 15px;
+  }
+  .navbar .menu ul li .mega-menu li ul li {
+    font-size: 12px;
+  }
+  .navbar .menu ul li .mega-menu {
+    right: 100px;
   }
 }
 @media screen and (max-width: 567px) {
@@ -267,6 +305,9 @@ header {
   }
   .navbar .social ul a {
     font-size: 20px;
+  }
+  .navbar .menu ul li .mega-menu {
+    width: 75%;
   }
 }
 @media screen and (max-width: 438px) {
