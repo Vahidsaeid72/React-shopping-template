@@ -49,7 +49,7 @@ const Slider = () => {
         <div className="slider">
             <div className="slider-item">
                 <div className={`item ${numberActive === 1 ? "avtive" : ""}`}>
-                    <div className="img" style={{ background: 'url("./../../images/10.jpg")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+                    <div className="img" style={{ background: 'url("./../../images/10.jpg")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                     </div>
                     <div className="caption">
                         <h1>'از اینجا دسته خالی بیرون نمیری'</h1>
@@ -57,7 +57,7 @@ const Slider = () => {
                     </div>
                 </div>
                 <div className={`item ${numberActive === 2 ? "avtive" : ""}`}>
-                    <div className="img" style={{ background: 'url("./../../images/5.jpg")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+                    <div className="img" style={{ background: 'url("./../../images/5.jpg")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                     </div>
                     <div className="caption">
                         <h1>'از اینجا دسته خالی بیرون نمیری'</h1>
@@ -65,7 +65,7 @@ const Slider = () => {
                     </div>
                 </div>
                 <div className={`item ${numberActive === 3 ? "avtive" : ""}`}>
-                    <div className="img" style={{ background: 'url("./../../images/7.jpg")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+                    <div className="img" style={{ background: 'url("./../../images/7.jpg")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                     </div>
                     <div className="caption">
                         <h1>'از اینجا دسته خالی بیرون نمیری'</h1>

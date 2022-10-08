@@ -10,7 +10,7 @@ const Banner = () => {
                         <img src="./images/nav-banner.png" alt="" />
                     </div>
                     <div className="logo">
-                        <img src="./images/thisLogo.png" alt="" />
+                        <img src="./images/thisLogo.jpg" alt="" />
                     </div>
                 </div>
             </div>

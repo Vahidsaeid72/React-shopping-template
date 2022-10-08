@@ -40,7 +40,7 @@ const Products = () => {
                     <h2>پر فروش های زنانه</h2>
                     <div className="items">
                         {product.topWoman.map((tw, index) => (
-                            <div key={index + "tw"} className="dress-item">
+                            <div key={index + "tw"} className="dress-item woamn-bestseller">
                                 <img src={tw.image} alt="" />
                                 <p>{tw.title}</p>
                                 <p>{tw.price}</p>

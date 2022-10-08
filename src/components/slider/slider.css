@@ -47,16 +47,17 @@
 .slider-item .item .caption {
   position: absolute;
   bottom: 40%;
-  left: 50%;
+  right: 2%;
+  width: 70%;
 }
 .slider-item .item .caption h1 {
-  font-size: 47px;
+  font-size: 40px;
   animation: text 1.5s ease forwards;
   -webkit-animation: text 1.5s ease forwards;
   opacity: 0;
 }
 .slider-item .item .caption p {
-  font-size: 20px;
+  font-size: 18px;
   animation: text 1.5s ease forwards;
   opacity: 0;
   -webkit-animation: text 2s ease forwards;
@@ -104,10 +105,11 @@
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
+  background: rgba(255, 255, 255, 0.418);
 }
 .slider .controls .next:hover,
 .slider .controls .prev:hover {
-  background-color: rgb(194, 0, 0);
+  background-color: rgba(194, 0, 0, 0.562);
 }
 .progress {
   position: absolute;
@@ -120,8 +122,8 @@
 
 .cunterSlide {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 30px;
   width: 350px;
   height: 40px;
   background: rgba(255, 255, 255, 0.603);
@@ -168,4 +170,89 @@
   height: 5px;
   background-color: rgba(0, 0, 0, 0.699);
   transition: all 0.4s ease;
+}
+/* ----------------responsive---------------- */
+@media screen and (max-width: 1200px) {
+  .slider {
+    height: 75vh;
+  }
+  .slider-item .item .caption h1 {
+    font-size: 35px;
+  }
+  .slider-item .item .caption p {
+    font-size: 16px;
+  }
+  .slider-item .item .caption {
+    bottom: 50%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .cunterSlide {
+    bottom: 30px;
+    right: 10px;
+    width: 300px;
+    height: 30px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  .cunterSlide .number-cunt {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 30px;
+    border-radius: 0 8px 8px 0;
+    -webkit-border-radius: 0 8px 8px 0;
+    -moz-border-radius: 0 8px 8px 0;
+    -ms-border-radius: 0 8px 8px 0;
+    -o-border-radius: 0 8px 8px 0;
+  }
+  .cunterSlide .number-cunt h2 {
+    font-size: 20px;
+  }
+  .cunterSlide .mini-progres {
+    width: 235px;
+    bottom: 12px;
+  }
+  .slider .controls .next,
+  .slider .controls .prev {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider-item .item .caption h1 {
+    font-size: 25px;
+  }
+  .slider-item .item .caption p {
+    font-size: 14px;
+  }
+  .cunterSlide {
+    width: 250px;
+  }
+  .cunterSlide .number-cunt {
+    width: 50px;
+  }
+
+  .cunterSlide .mini-progres {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .slider-item .item .caption {
+    width: 75%;
+    text-align: center;
+  }
+  .slider-item .item .caption h1 {
+    font-size: 20px;
+  }
+  .slider-item .item .caption p {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 400px) {
 }

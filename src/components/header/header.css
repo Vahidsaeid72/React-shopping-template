@@ -27,6 +27,7 @@ header {
 }
 .navbar .menu ul li a {
   color: #fff;
+  font-size: 15px;
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s e;
   -moz-transition: all 0.4s e;
@@ -166,4 +167,107 @@ header {
   width: 280px;
   height: 280px;
   padding: 5px 10px;
+}
+.navbar .hamberger {
+  color: #fff;
+  position: relative;
+  right: 20px;
+  font-size: 35px;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  display: none;
+}
+.navbar .hamberger:hover {
+  color: #c00;
+}
+/* ----------responsive----------------- */
+@media screen and (max-width: 1200px) {
+  .navbar .menu ul li a {
+    font-size: 12px;
+  }
+  .navbar .menu ul li span {
+    font-size: 20px;
+  }
+  .navbar .social ul a {
+    font-size: 20px;
+  }
+  .navbar .social button {
+    padding: 5px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .navbar .menu {
+    display: none;
+  }
+  .navbar .hamberger {
+    display: flex;
+  }
+  .navbar .social {
+    width: 40%;
+  }
+  .navbar .social button {
+    display: none;
+  }
+  .navbar .social ul {
+    width: 100%;
+  }
+
+  .navbar .menu.show-menu {
+    display: flex;
+    position: absolute;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    top: 9vh;
+    z-index: 10000;
+    animation: height 1s;
+    -webkit-animation: height 1s;
+    overflow: hidden;
+  }
+  @keyframes height {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 270px;
+    }
+  }
+  .navbar .menu.show-menu ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar .menu.show-menu ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 5px 0px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+  }
+  .navbar .menu.show-menu ul li a,
+  .navbar .menu.show-menu ul li span {
+    font-size: 20px;
+  }
+  .navbar .social ul a {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .navbar .social ul a {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .navbar .social {
+    width: 50%;
+    margin-left: 10px;
+  }
+  .navbar .social ul a {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 438px) {
 }

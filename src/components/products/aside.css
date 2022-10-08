@@ -56,3 +56,50 @@
 #aside .bottom-baner img {
   width: 60%;
 }
+/* -------------responsive--------------- */
+@media screen and (max-width: 1200px) {
+  #aside h2 {
+    font-size: 20px;
+  }
+  #aside .mySection .aside-item .my-item p {
+    font-size: 12px;
+    padding: 0 5px;
+  }
+  #aside {
+    padding: 0 5px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #aside h2 {
+    font-size: 15px;
+  }
+  #aside .mySection .aside-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #aside .mySection .aside-item .my-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+  }
+}
+@media screen and (max-width: 768px) {
+  #aside .mySection .aside-item .my-item {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #aside .mySection .aside-item .my-item {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+}

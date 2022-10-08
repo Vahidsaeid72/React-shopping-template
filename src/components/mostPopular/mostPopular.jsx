@@ -19,9 +19,9 @@ const MostPopular = () => {
                         </span>
                     </div>
                 </div>
-                <div className="populars-item">
+                <div className="populars-item seccendChilde">
                     <img src="./images/product/men/2.jpg" alt="" />
-                    <div className="statistics">
+                    <div className="statistics seccendChilde">
                         <span className="statistics-veiw">
                             <p>16000 بازدید</p>
                             <span><FaRegEye /></span>

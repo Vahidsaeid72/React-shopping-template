@@ -73,7 +73,7 @@ footer .footer-top .foter-latestNews form input {
 footer .footer-top .foter-latestNews form button {
   width: 20%;
   padding: 15px;
-  background: red;
+  background: #c00;
   color: #fff;
   font-size: 20px;
   margin-right: 10px;
@@ -82,8 +82,16 @@ footer .footer-top .foter-latestNews form button {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
 }
-
+footer .footer-top .foter-latestNews form button:hover {
+  background: red;
+}
 footer .footer-bottom {
   width: 100%;
   display: flex;
@@ -114,7 +122,7 @@ footer .footer-bottom .foter-withUs h5 {
 footer .footer-bottom .foter-address {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
 }
 footer .footer-bottom .foter-address .email-number {
   display: flex;
@@ -135,8 +143,97 @@ footer .footer-bottom .foter-logo {
   align-items: center;
   justify-content: flex-end;
 }
-footer .footer-bottom .foter-logo img {
-  width: 50%;
-  height: 70%;
-  opacity: 0.3;
+
+/* -------------------responsive-------------------- */
+@media screen and (max-width: 1200px) {
+  footer .footer-top .foter-latestNews {
+    width: 35%;
+  }
+  footer .footer-top .foter-latestNews form input {
+    width: 70%;
+    padding: 8px;
+  }
+  footer .footer-top .foter-latestNews form button {
+    width: 20%;
+    padding: 14px;
+    font-size: 15px;
+  }
+  footer .footer-top .foter-aboutUs p {
+    font-size: 12px;
+  }
+  footer .footer-bottom .foter-address .email-number {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 992px) {
+  footer .footer-top {
+    flex-wrap: wrap;
+  }
+  footer .footer-top .foter-aboutUs {
+    width: 50%;
+    margin-right: 20px;
+  }
+  footer .footer-top .foter-socials {
+    width: 33%;
+  }
+  footer .footer-top .foter-latestNews {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  footer .footer-top .foter-socials .foter-socials-items li a {
+    margin: 3px;
+  }
+  footer .footer-bottom {
+    flex-wrap: wrap;
+  }
+  footer .footer-bottom .foter-services {
+    width: 50%;
+    text-align: center;
+  }
+  footer .footer-bottom .foter-withUs {
+    width: 50%;
+    text-align: center;
+  }
+  footer .footer-bottom .foter-address {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    border-top: 2px solid rgb(53, 53, 53);
+    padding-top: 30px;
+  }
+  footer .footer-bottom .foter-address .symbols {
+    width: 50%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .footer-top .foter-latestNews form button {
+    padding: 11px;
+    font-size: 12px;
+  }
+  footer .footer-top .foter-latestNews form input {
+    padding: 5px;
+  }
+  footer .footer-top .foter-socials {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 567px) {
+  footer .footer-top .foter-socials .foter-socials-items {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 400px) {
+  footer .footer-top .foter-aboutUs {
+    width: 100%;
+    margin: 20px;
+  }
+  footer .footer-top .foter-socials {
+    width: 100%;
+    margin: 20px;
+  }
+  footer .footer-bottom .foter-address {
+    margin: 20px;
+  }
 }

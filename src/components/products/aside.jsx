@@ -8,7 +8,7 @@ const Aside = () => {
     return (
         <aside id="aside">
             <div className="mySection">
-                <h2>اخرین مخصولات</h2>
+                <h2>اخرین محصولات</h2>
                 <div className="aside-item">
                     {myData.latestProducts.map((last, index) => (
                         <div key={index + "last"} className="my-item">

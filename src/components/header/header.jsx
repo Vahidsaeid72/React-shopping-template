@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './header.css'
 import {
     FaHome
@@ -11,20 +11,26 @@ import {
     , FaTwitterSquare
     , FaInstagram,
     FaUser,
-    FaSearch
-    ,
+    FaSearch,
+    FaBars,
+    FaWindowClose
 } from "react-icons/fa";
 
 
 
 
 const Header = () => {
+    const [showMenu, setShowMenu] = useState(false);
+
     return (
 
         <header>
             <div className="container">
                 <div className="navbar">
-                    <div className="menu">
+                    <div className="hamberger" onClick={() => setShowMenu(!showMenu)}>
+                        {!showMenu ? <FaBars /> : <FaWindowClose />}
+                    </div>
+                    <div className={`menu ${showMenu ? 'show-menu' : ""}`} >
                         <ul>
                             <li><a href="/">خانه</a><span><FaHome /></span></li>
                             <li >
@@ -87,6 +93,7 @@ const Header = () => {
                         <button>درخواست محصول</button>
                     </div>
                 </div >
+
             </div >
         </header >
 

@@ -13,11 +13,19 @@
   align-items: center;
 }
 .ads .myRow .logo img {
-  height: 11vh;
-  width: 11vh;
+  height: 10vh;
+
   cursor: pointer;
+  opacity: 0.4;
 }
 
 .ads .myRow .banner img {
-  height: 11vh;
+  height: 10vh;
+  width: 90%;
+}
+/* --------------------responsive-------------------- */
+
+@media screen and (max-width: 567px) {
+}
+@media screen and (max-width: 400px) {
 }
